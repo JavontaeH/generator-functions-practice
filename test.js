@@ -31,9 +31,9 @@ const colorGen = function* () {
     yield reindeerColor;
   }
 };
+
+// console logging the result of the generator should loop through colors until it runs out of reindeer to assign too, last console.log is an expected undefinied with done:true
 const generatorObject = colorGen();
-console.log(generatorObject.next());
-console.log(generatorObject.next());
 console.log(generatorObject.next());
 console.log(generatorObject.next());
 console.log(generatorObject.next());
